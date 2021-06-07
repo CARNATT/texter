@@ -7,16 +7,15 @@
 			--BLANCOO: #F5FAFA;
 			--ROJO: #F7444E;
 			--AZUL-OSCURO: #17224D;
-
 }
 
 
 
 
 
-body {background: var(--AZUL-OSCURO);}
+body {background: #17224D;}
 
-.cuerpo {background: var(--AZUL-OSCURO);}
+.cuerpo {background: #17224D;}
 .LOGO_PRO {width: 100px; border-radius: 100px; margin-left: 1%;}
 .contral {padding: 10px;display: flex;color: #fff;overflow: hidden;
 overflow: auto;border-bottom: 2px solid #fff;}
