@@ -16,11 +16,18 @@ overflow: auto;border-bottom: 2px solid #fff;}
 .CINCO {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
 .SEIS {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
 
+p {font-family: 'Open Sans', sans-serif;}
+p::selection {background: transparent;}
 
-.TEXTO_INFORMACION {color:#F7444E;
-border-bottom: 2px solid #F7444E;font-size: 200%;}
+
+.TEXTO_INFORMACION {color:#F7444E; border-bottom: 2px solid #F7444E;
+font-family: 'Playfair Display', serif;
+width: auto;
+justify-content: center; text-align: center;
+}
+
 .TEXTO_INFORMACION::selection {background: transparent;}
-.LISTA_INFOMACION {text-align: left;}
+.LISTA_INFOMACION {text-align: left;font-family: 'Open Sans', sans-serif;}}
 mark {background: transparent; color: #F7444E;}
 mark::selection {background: transparent;}
 
@@ -45,9 +52,17 @@ text-align: center;justify-content: center;}
 .CAJAS_3 {width:45%;height: 300px;background: red;border-radius: 100px;}
 .CAJAS_4 {width:45%;height: 300px;background: blue;border-radius: 20px;}
 .CAJAS_5 {width:45%;height:300px;background:#e455ff;border-radius:60px;}
+
 .CAJAS_6 {background:#78BCC4;border-radius: 40px;
-white-space: normal; padding: 10px;overflow: hidden;
-text-align: center;justify-content: center;}
+width: auto;overflow: hidden;white-space: normal; padding: 10px;
+text-align: center;justify-content: center;
+
+
+
+}
+
+
+
 /* CLASIFICACIÓN DE LAS CAJAS */
 
 /* OCULTAR */
@@ -66,6 +81,9 @@ text-align: center;justify-content: center;}
 #OP_5:checked + .OCULTA_DATOS_CINCO {display: block;}
 #OP_4:checked + .OCULTA_DATOS_CUATRO {display: block;}
 /* OCULTAR */
-input {display: none;}
+input {display: none;font-family: ;
+
+
+}
 
 }
