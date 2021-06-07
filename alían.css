@@ -1,18 +1,6 @@
 
 @media screen and (min-width: 360px) and (max-width: 640px){
 
-
-:root {
-			--BLANCO: #F7F8F3;
-			--BLANCOO: #F5FAFA;
-			--ROJO: #F7444E;
-			--AZUL-OSCURO: #17224D;
-}
-
-
-
-
-
 body {background: #17224D;}
 
 .cuerpo {background: #17224D;}
@@ -29,16 +17,16 @@ overflow: auto;border-bottom: 2px solid #fff;}
 .SEIS {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
 
 
-.TEXTO_INFORMACION {color:#F7444E;border-bottom: 2px solid var(--ROJO);}
+.TEXTO_INFORMACION {color:#F7444E;border-bottom: 2px solid #F7444E;}
 .TEXTO_INFORMACION::selection {background: transparent;}
 .LISTA_INFOMACION {text-align: left;}
-mark {background: transparent; color: var(--ROJO);}
+mark {background: transparent; color: #F7444E;}
 mark::selection {background: transparent;}
 
 /* TEXTO */
 .text_B {font-size: 20px; margin-left: 2%;margin: 5px;}
 .text_A {font-size: 20px; margin-left: 2%;margin: 5px;}
-.TEXTO_PRINCIPAL {display: table-row;color: var(--BLANCOO);}
+.TEXTO_PRINCIPAL {display: table-row;color: #F5FAFA;}
 .text_A::selection {background: transparent;}
 .text_B::selection {background: transparent;}
 
