@@ -1,40 +1,47 @@
 
 @media screen and (min-width: 360px) and (max-width: 640px){
 
-body {background: #17224D;}					
-input {display: none;}
-.cuerpo {background: #17224D;}
+
+:root {
+			--BLANCO: #F7F8F3;
+			--BLANCOO: #F5FAFA;
+			--ROJO: #F7444E;
+			--AZUL-OSCURO: #17224D;
+
+}
+
+
+
+
+
+body {background: var(--AZUL-OSCURO);}
+
+.cuerpo {background: var(--AZUL-OSCURO);}
 .LOGO_PRO {width: 100px; border-radius: 100px; margin-left: 1%;}
-
-
-
-
-.contral { padding: 10px;display: flex;color: #fff;position: relative;
-				  overflow: hidden;overflow: auto;}
+.contral {padding: 10px;display: flex;color: #fff;overflow: hidden;
+overflow: auto;border-bottom: 2px solid #fff;}
 				 
 
-.UNO {margin-left: 20px;margin-right: 20px;}
-.DOS {margin-left: 20px;margin-right: 20px;}
-.TRES {margin-left: 20px;margin-right: 20px;}
-.CUATRO {margin-left: 20px;margin-right: 20px;} 
-.CINCO {margin-left: 20px;margin-right: 20px;} 
-.SEIS {margin-left: 20px;margin-right: 20px;} 
+.UNO {margin-left: 20px;margin-right: 20px;cursor: pointer;}
+.DOS {margin-left: 20px;margin-right: 20px;cursor: pointer;}
+.TRES {margin-left: 20px;margin-right: 20px;cursor: pointer;}
+.CUATRO {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
+.CINCO {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
+.SEIS {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
 
 
-
-
-
-
+.TEXTO_INFORMACION {color:#F7444E;border-bottom: 2px solid var(--ROJO);}
+.TEXTO_INFORMACION::selection {background: transparent;}
+.LISTA_INFOMACION {text-align: left;}
+mark {background: transparent; color: var(--ROJO);}
+mark::selection {background: transparent;}
 
 /* TEXTO */
 .text_B {font-size: 20px; margin-left: 2%;margin: 5px;}
 .text_A {font-size: 20px; margin-left: 2%;margin: 5px;}
-.TEXTO_PRINCIPAL {display: table-row;color: #F5FAFA;}
-
-#U:checked = {color: #f7444E;}
-#UU {}
-
-
+.TEXTO_PRINCIPAL {display: table-row;color: var(--BLANCOO);}
+.text_A::selection {background: transparent;}
+.text_B::selection {background: transparent;}
 
 #IMAG {width: 40px;}/* LOGO */
 #STAFF {width: 85%; padding: 20px;}/* STAFF-FLIPA */
@@ -43,15 +50,16 @@ input {display: none;}
 
 .CAJAS_BASE {display: flex; justify-content: space-around;padding: 3%;
 overflow: hidden;white-space: normal;}
-
 .CAJAS {width: 45%; height: 300px;background: green;border-radius: 10px;
 text-align: center;justify-content: center;}
 
 .CAJAS_2 {width: 45%; height: 300px;background: yellow;}
-.CAJAS_3 {width: 45%;height: 300px;background: red;border-radius: 100px;}
-.CAJAS_4 {width: 45%;height: 300px;background: blue;border-radius: 20px;}
-.CAJAS_5 {width:45%;height:300px;background:#e455ff;border-radius: 60px;}
-.CAJAS_6 {width:45%;height:300px;background:#15ffe0;border-radius: 40px;}
+.CAJAS_3 {width:45%;height: 300px;background: red;border-radius: 100px;}
+.CAJAS_4 {width:45%;height: 300px;background: blue;border-radius: 20px;}
+.CAJAS_5 {width:45%;height:300px;background:#e455ff;border-radius:60px;}
+.CAJAS_6 {width:85%;background:#78BCC4;border-radius: 40px;
+white-space: normal; padding: 10px;overflow: hidden;
+text-align: center;justify-content: center;}
 /* CLASIFICACIÓN DE LAS CAJAS */
 
 /* OCULTAR */
@@ -70,4 +78,6 @@ text-align: center;justify-content: center;}
 #OP_5:checked + .OCULTA_DATOS_CINCO {display: block;}
 #OP_4:checked + .OCULTA_DATOS_CUATRO {display: block;}
 /* OCULTAR */
+input {display: none;}
+
 }
