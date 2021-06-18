@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 360px) and (max-width: 640px){
+@media screen and (min-width: 300px) and (max-width: 640px){
 
 body {background: #17224D;}
 html {scroll-behavior: smooth;}
@@ -216,7 +216,7 @@ input {display: none;}
 }
 
 /* @media  screen and (min-width: 800px) and (max-width: 2880px) { */
-@media  screen and (max-width: 1000px) {
+@media  screen and (min-width: 1000px) {
 
 .OCULTAR_PARA_PC {display: block;}
 .PC {display: none; justify-content: center; text-align: center;}}
