@@ -2,17 +2,53 @@
 @media screen and (min-width: 360px) and (max-width: 640px){
 
 body {background: #17224D;}
-section {padding: 10px; background: red;}
-.LOGO_PRO {width: 100px; border-radius: 100px; }
-.DELIMITA {
-					
-					
-}
-.BOLITA {
-				width: 64px;left: 64px;padding: 10px;background: #fff;
-				border-radius: 100px;
-}
+html {scroll-behavior: smooth;}
 
+
+.bst {
+
+
+}
+.BTS {text-decoration: none;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.BTS {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;}
+.BTS:hover {box-shadow: 0 0 20px red;
+background-position: right center;color: #fff;text-decoration: none;}
+         
+
+
+section {padding: 10px; background: red;}
+.LOGO_PRO {width: 100px; border-radius: 100px;}
+
+
+
+.SENT {text-align: center;padding: 10px; width: 50px;}
+#WEYY {background: red; padding: 10px; position: absolute;}
+.WEYY {
+ border-radius: 100px;
+ padding: 4px;
+ 
+ animation-name: OKK;
+ animation-duration: 10s;
+ /* animation-delay: 2s; */
+ animation-iteration-count: infinite;
+ }
+ 
+ 
+
+.PUNT {
+font-size: 35px; justify-content: center; align-content: center; 
+}
 
 
 
@@ -44,7 +80,10 @@ overflow: auto;border-bottom: 2px solid #fff;}
 				 
 
 .UNO {margin-left: 20px;margin-right: 20px;cursor: pointer;}
-.DOS {margin-left: 20px;margin-right: 20px;cursor: pointer;}
+.DOS {margin-left: 20px;margin-right: 20px;cursor: pointer;
+ animation-name: OKKk;animation-duration: 5s;
+ animation-iteration-count: infinite;}
+ 
 .TRES {margin-left: 20px;margin-right: 20px;cursor: pointer;}
 .CUATRO {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
 .CINCO {margin-left: 20px;margin-right: 20px;cursor: pointer;} 
@@ -79,7 +118,12 @@ text-align: center;justify-content: center;}
 .CAJAS_2 {width: 45%; height: 300px;background: yellow;}
 .CAJAS_3 {width:45%;height: 300px;background: red;border-radius: 100px;}
 .CAJAS_4 {width:45%;height: 300px;background: blue;border-radius: 20px;}
-.CAJAS_5 {width:45%;height:300px;background:#e455ff;border-radius:60px;}
+.CAJAS_5 {background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+border-radius: 40px;
+width: auto;overflow: hidden;white-space: normal; padding: 10px;
+text-align: center;justify-content: center;}
+
+
 .CAJAS_6 {background:#78BCC4;border-radius: 40px;
 width: auto;overflow: hidden;white-space: normal; padding: 10px;
 text-align: center;justify-content: center;}
@@ -117,7 +161,11 @@ border-radius: 20px;}/* LABEL DEL GRUPO 1 */
 .OCULTA_DATOS_SEIS {display: none;}
 
 
-#OP_1:checked + .OCULTA_DATOS_UNO {display: block;}
+#OP_1:checked + .OCULTA_DATOS_UNO {display: block;
+
+
+
+}
 #OP_2:checked + .OCULTA_DATOS_DOS {display: block;}
 #OP_3:checked + .OCULTA_DATOS_TRES {display: block;}
 #OP_6:checked + .OCULTA_DATOS_SEIS {display: block;}
@@ -125,20 +173,54 @@ border-radius: 20px;}/* LABEL DEL GRUPO 1 */
 #OP_4:checked + .OCULTA_DATOS_CUATRO {display: block;}
 /* OCULTAR */
 
-
-
-
-
+.ocurtar_ekemento_uno {display: none;}
+#DATOS:checked + .ocurtar_ekemento_uno {display: block;}
+.ocurtar_ekemento_dos {display: none;}
+#DATS:checked + .ocurtar_ekemento_dos {display: block;}
 
 
 
 input {display: none;}
 .PC {display: none;}
+
+/* ----+------+---- ANIMACIÓN ------+---------+------- */
+@keyframes OKK {
+ 0% {background: #FF0000;}
+ 20% {background: #FAFF00;}
+ 40% {background: #06FF00;}
+ 60% {background: #00FFF0;}
+ 80% {background: #001AFF;}
+ 90% {background: #FF00F5;}
+ 100% {background: #FF0000;}}
+ @keyframes OKKk {
+ 0% {color: #FF0000;}
+ 20% {color: #FAFF00;}
+ 40% {color: #06FF00;}
+ 60% {color: #00FFF0;}
+ 80% {color: #001AFF;}
+ 90% {color: #FF00F5;}
+ 100% {color: #FF0000;}}
+/* ----+------+---- ANIMACIÓN ------+---------+------- */
+
+
+
+
+
+
+
+.OCULTAR_PARA_PC {display: block;}
+.PC {display: none; justify-content: center; text-align: center;}}
+
+
+
 }
 
+/* @media  screen and (min-width: 800px) and (max-width: 2880px) { */
+@media  screen and (max-width: 1000px) {
+
+.OCULTAR_PARA_PC {display: block;}
+.PC {display: none; justify-content: center; text-align: center;}}
 
 
 
-@media  screen and (min-width: 800px) and (max-width: 2880) {
-body {display: none;}
-.PC {display: block; justify-content: center; text-align: center;}}
+
